@@ -1,36 +1,34 @@
 import os
-import subprocess
 import time
 import getpass
 
    
-print getpass.getuser()  
+username = getpass.getuser() 
+
 def find():
 	os.system("cd /")  
 	os.system("cd /home")
-	os.system("cd %s") % username
+	os.system("cd "%s) % username
 	
+
+def kill():
+	writepath = start.py
+	mode = 'a' 
+	file_path = 'cat.txt'
+	try:
+		fp = open(cat.txt)
+	except IOError:
+		# If not exists, create the file
+		fp = open(cat.txt, 'w+')
+	print ("lol")
 
 
 def execute():
-	print ("You are about to run a malicous script")
-	print ("Are you sure you want to do this")
-	time.sleep(3)
-	e = raw_input('Y or N')
-	if e == Y:
-		print("Gamming")
-		find()
-	elif e == y:
-		print ("gamming")
-		find()
-	else:
-		quit() 
+	 return input("You are about to run a malicous script, do you want to coninue? 1 is Y/ 2 is N")
 
-execute()
-
-
-
-
-
-
+x = execute()
+if x == 1:
+	find()
+else:
+	quit()
 
